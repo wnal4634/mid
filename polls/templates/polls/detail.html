@@ -17,7 +17,7 @@
     <label for="choice{{forloop.counter}}">{{choice.choice_text}}</label><br>
     {% endfor %}
     <input type="submit" value="Vote"><br><br>
-    <div><a href="{% url 'polls:index' question.id %}">목록으로 가기</a></div>
+    <div><a href="{% url 'polls:detail' question.id %}">목록으로 가기</a></div>
 </form>
 </body>
 </html>
